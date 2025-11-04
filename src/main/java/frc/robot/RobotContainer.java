@@ -9,7 +9,7 @@ import static edu.wpi.first.units.Units.*;
 import frc.robot.commands.Autos;
 import frc.robot.subsystems.*;
 import frc.robot.commands.ExampleCommand;
-import frc.robot.commands.generated.TunerConstants.OperatorConstants;
+import frc.robot.generated.TunerConstants.OperatorConstants;
 import frc.robot.subsystems.ExampleSubsystem;
 import frc.robot.subsystems.CommandSwerveDrivetrain;
 
