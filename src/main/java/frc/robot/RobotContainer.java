@@ -4,37 +4,63 @@
 
 package frc.robot;
 
+import static edu.wpi.first.units.Units.*;
+
 import frc.robot.Constants.OperatorConstants;
 import frc.robot.commands.Autos;
+import frc.robot.subsystems.*;
 import frc.robot.commands.ExampleCommand;
 import frc.robot.subsystems.ExampleSubsystem;
-import edu.wpi.first.wpilibj.*;
+import frc.robot.subsystems.CommandSwerveDrivetrain;
+
+import edu.wpi.first.cameraserver.CameraServer;
+import edu.wpi.first.apriltag.jni.*;
 import edu.wpi.first.units.Units;
 import edu.wpi.first.math.*;
 import edu.wpi.first.math.geometry.*;
+import edu.wpi.first.math.geometry.Pose2d;
+import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.math.kinematics.*;
 import edu.wpi.first.math.util.*;
-import edu.wpi.first.apriltag.jni.*;
+import edu.wpi.first.math.jni.*;
+
 import com.ctre.phoenix6.configs.*;
 import com.ctre.phoenix6.configs.jni.*;
 import com.ctre.phoenix6.swerve.*;
-import com.ctre.phoenix6.wpiutils.*;
+import com.ctre.phoenix6.Orchestra;
 import com.ctre.phoenix6.swerve.jni.*;
+import com.ctre.phoenix6.wpiutils.*;
+import com.ctre.phoenix6.hardware.jni.*;
+
+import edu.wpi.first.units.*;
+import edu.wpi.first.units.Units.*;
+
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.button.CommandXboxController;
 import edu.wpi.first.wpilibj2.command.button.Trigger;
+import edu.wpi.first.wpilibj2.command.InstantCommand;
+import edu.wpi.first.wpilibj2.command.sysid.*;
+
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.simulation.*;
+import edu.wpi.first.wpilibj.*;
+
 import com.ctre.phoenix.*;
-import com.ctre.phoenix6.hardware.jni.*;
 import com.ctre.phoenix.time.StopWatch;
+
 import com.pathplanner.lib.*;
 import com.pathplanner.lib.commands.*;
 import com.pathplanner.lib.auto.*;
+import com.pathplanner.lib.auto.NamedCommands;
+import com.pathplanner.lib.auto.AutoBuilder;
+import com.pathplanner.lib.commands.FollowPathCommand;
+import com.pathplanner.lib.commands.PathPlannerAuto;
+import com.pathplanner.lib.commands.PathfindingCommand;
 import com.pathplanner.lib.util.*;
+import com.pathplanner.lib.util.swerve.*;
 import com.pathplanner.lib.pathfinding.*;
 import com.pathplanner.lib.path.*;
-import com.pathplanner.lib.util.swerve.*;
+
 import com.revrobotics.jni.*;
 
 
