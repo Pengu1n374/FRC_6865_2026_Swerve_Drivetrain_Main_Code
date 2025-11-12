@@ -1,10 +1,15 @@
+// The CommandSwerveDrivetrain is the Base Command that will Power and Operrate the Motors for a Swerve Drivetrain
+
 package frc.robot.subsystems;
+// All imports with be between Line 6-53
 
 import java.util.function.Supplier;
+
 import static edu.wpi.first.units.Units.Second;
 import static edu.wpi.first.units.Units.Volts;
 
 import edu.wpi.first.math.controller.PIDController;
+import com.ctre.phoenix6.*;
 import com.ctre.phoenix6.SignalLogger;
 import com.ctre.phoenix6.Utils;
 import com.ctre.phoenix6.hardware.Pigeon2;
@@ -22,7 +27,6 @@ import com.pathplanner.lib.auto.NamedCommands;
 import com.pathplanner.lib.controllers.PPHolonomicDriveController;
 import com.pathplanner.lib.path.PathConstraints;
 import com.pathplanner.lib.path.PathPlannerPath;
-
 
 import edu.wpi.first.math.Matrix;
 import edu.wpi.first.math.geometry.Pose2d;

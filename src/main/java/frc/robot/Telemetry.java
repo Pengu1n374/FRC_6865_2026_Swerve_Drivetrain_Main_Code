@@ -1,5 +1,8 @@
+// Telemetry is code that will allow the Driver and Opperator to control the robot
+
 package frc.robot;
 
+// All Libraries will be between Line 4-22
 import com.ctre.phoenix6.SignalLogger;
 import com.ctre.phoenix6.swerve.SwerveDrivetrain.SwerveDriveState;
 
@@ -20,4 +23,6 @@ import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.wpilibj.util.Color;
 import edu.wpi.first.wpilibj.util.Color8Bit;
 
-public class Telemetry {}
+public class Telemetry {
+// Put all Parimeters and Commands inside here
+}
