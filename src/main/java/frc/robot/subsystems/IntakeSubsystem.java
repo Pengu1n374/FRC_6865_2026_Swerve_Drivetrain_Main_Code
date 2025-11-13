@@ -17,7 +17,7 @@ public class IntakeSubsystem extends SubsystemBase {
     /**
    * Below is the IntakeCommand factory method.
    *
-   * @return a command
+   * @return to return a command
    */
   public Command IntakeMethodCommand() {
     // Inline construction of command goes here, between the brackets.
@@ -31,7 +31,7 @@ public class IntakeSubsystem extends SubsystemBase {
   /**
    * Below is a Intake method querying a boolean state of the subsystem (for example, a digital sensor to recognize what is in front of the Shooter).
    *
-   * @return value of some boolean subsystem state, such as a digital sensor.
+   * The @return value of some boolean subsystem state, such as a digital sensor, is below.
    */
   public boolean IntakeCondition() {
     // Query some boolean state, such as a digital sensor.

@@ -32,4 +32,7 @@ import edu.wpi.first.wpilibj.util.Color8Bit;
 
 public class Telemetry {
     // Put all Parimeters and Commands inside this Class
+    private class TelemetryParameters {
+        // Put all Telemetry Parameters here
+    }
 }

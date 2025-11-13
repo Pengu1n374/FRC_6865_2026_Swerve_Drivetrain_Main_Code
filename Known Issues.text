@@ -11,10 +11,10 @@ The only thing we have in CommandSwerveDriveTrain is only imports
 We do not have anything in the public class
 
 IntakeSubsystem.java:
-No known issues yet
+Need to add extra comments
 
 Telemetry.java:
-No known issues yet
+Need to add comments
 
 ShooterSubsystem.java:
 No known issues yet
