@@ -10,17 +10,14 @@ CommandSwerveDriveTrain.java:
 The only thing we have in CommandSwerveDriveTrain is only imports
 We do not have anything in the public class
 
-IntakeSubsystem.java:
-Need to add extra comments
-
 Telemetry.java:
 Need to add comments
 
-ShooterSubsystem.java:
-No known issues yet
-
 IntakeAuto.java:
 No known issues yet
+
+IntakeSubsystem.java:
+Need to add extra comments
 
 IntakeCommand.java:
 No known issues yet
@@ -30,6 +27,12 @@ No known issues yet
 
 ShooterCommand.java:
 No known issues yet
+
+ShooterSubsystem.java:
+No known issues yet
+
+ShooterParameters.java:
+Need to Create Parameters for Shooter
 
 TunerConstants.java:
 No known issues yet
