@@ -1,0 +1,41 @@
+RobotContainer.java:
+An Auto will not go under Class GetAutonomousCommand
+// Return ShooterAuto.ShooterAuto(m_ShooterSubsystem);
+because it collides with:
+// Return IntakeAuto.IntakeAuto(m_IntakeSubsystem);
+and causes the ShooterAuto to be classified as:
+"Unreachable Code"
+
+CommandSwerveDriveTrain.java:
+The only thing we have in CommandSwerveDriveTrain is only imports
+We do not have anything in the public class
+
+IntakeSubsystem.java:
+No known issues yet
+
+Telemetry.java:
+No known issues yet
+
+ShooterSubsystem.java:
+No known issues yet
+
+IntakeAuto.java:
+No known issues yet
+
+IntakeCommand.java:
+No known issues yet
+
+ShooterAuto.java:
+No known issues yet
+
+ShooterCommand.java:
+No known issues yet
+
+TunerConstants.java:
+No known issues yet
+
+Main.java:
+No known issues yet
+
+Robot.java:
+No known issues yet
