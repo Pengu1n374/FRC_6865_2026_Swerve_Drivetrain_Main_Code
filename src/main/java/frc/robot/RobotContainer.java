@@ -11,6 +11,8 @@ import frc.robot.commands.ShooterCommand;
 import frc.robot.commands.IntakeAuto;
 import frc.robot.commands.IntakeCommand;
 import frc.robot.subsystems.ShooterSubsystem;
+import frc.robot.subsystems.ShooterParameters;
+import frc.robot.subsystems.IntakeParameters;
 import frc.robot.subsystems.IntakeSubsystem;
 import frc.robot.subsystems.CommandSwerveDrivetrain;
 import frc.robot.generated.TunerConstants.OperatorConstants;
