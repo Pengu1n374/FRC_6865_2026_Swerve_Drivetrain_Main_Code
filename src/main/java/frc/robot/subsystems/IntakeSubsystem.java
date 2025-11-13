@@ -3,7 +3,7 @@
 
 package frc.robot.subsystems;
 
-// All imports with be between Lines 7-10
+// All imports with be between Lines 7-11
 import frc.robot.commands.IntakeAuto;
 import frc.robot.commands.IntakeCommand;
 import frc.robot.subsystems.IntakeParameters;

@@ -2,13 +2,15 @@
 
 package frc.robot;
 
-// All imports will be between Lines 6-30
+// All imports will be between Lines 6-31
 import com.ctre.phoenix6.SignalLogger;
 import com.ctre.phoenix6.swerve.SwerveDrivetrain.SwerveDriveState;
 import frc.robot.RobotContainer;
 import frc.robot.subsystems.CommandSwerveDrivetrain;
 import frc.robot.subsystems.IntakeSubsystem;
+import frc.robot.subsystems.IntakeParameters;
 import frc.robot.subsystems.ShooterSubsystem;
+import frc.robot.subsystems.IntakeParameters;
 import frc.robot.commands.IntakeAuto;
 import frc.robot.commands.IntakeCommand;
 import frc.robot.commands.ShooterAuto;

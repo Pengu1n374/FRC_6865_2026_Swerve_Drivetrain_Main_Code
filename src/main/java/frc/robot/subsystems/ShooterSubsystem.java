@@ -1,8 +1,8 @@
 // This is the ShooterSubsystem which will opperate the Shooting Mechanism of the Robot
 
 package frc.robot.subsystems;
-// All imports will be between Lines 6-9
 
+// All imports will be between Lines 6-10
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.commands.ShooterAuto;
 import frc.robot.commands.ShooterCommand;
