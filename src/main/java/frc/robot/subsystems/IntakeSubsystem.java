@@ -27,7 +27,7 @@ public class IntakeSubsystem extends SubsystemBase {
           /* The One-time action goes here */
         });
   }
-
+  public final IntakeParameters parameters = new IntakeParameters();
   /**
    * Below is a Intake method querying a boolean state of the subsystem (for example, a digital sensor to recognize what is in front of the Shooter).
    *
