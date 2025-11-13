@@ -1,10 +1,10 @@
 RobotContainer.java:
 An Auto will not go under Class GetAutonomousCommand
-Return ShooterAuto.ShooterAuto(m_ShooterSubsystem);
-because it collides with
-Return IntakeAuto.IntakeAuto(m_IntakeSubsystem);
+// Return ShooterAuto.ShooterAuto(m_ShooterSubsystem);
+because it collides with:
+// Return IntakeAuto.IntakeAuto(m_IntakeSubsystem);
 and causes the ShooterAuto to be classified as:
-Unreachable Code
+"Unreachable Code"
 
 CommandSwerveDriveTrain.java:
 The only thing we have in CommandSwerveDriveTrain is only imports
