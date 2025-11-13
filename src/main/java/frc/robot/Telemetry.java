@@ -2,10 +2,16 @@
 
 package frc.robot;
 
-// All Libraries will be between Line 4-22
+// All imports will be between Lines 6-30
 import com.ctre.phoenix6.SignalLogger;
 import com.ctre.phoenix6.swerve.SwerveDrivetrain.SwerveDriveState;
-
+import frc.robot.subsystems.CommandSwerveDrivetrain;
+import frc.robot.subsystems.IntakeSubsystem;
+import frc.robot.subsystems.ShooterSubsystem;
+import frc.robot.commands.IntakeAuto;
+import frc.robot.commands.IntakeCommand;
+import frc.robot.commands.ShooterAuto;
+import frc.robot.commands.ShooterCommand;
 import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.kinematics.ChassisSpeeds;
 import edu.wpi.first.math.kinematics.SwerveModulePosition;
@@ -24,5 +30,5 @@ import edu.wpi.first.wpilibj.util.Color;
 import edu.wpi.first.wpilibj.util.Color8Bit;
 
 public class Telemetry {
-// Put all Parimeters and Commands inside here
+    // Put all Parimeters and Commands inside this Class
 }

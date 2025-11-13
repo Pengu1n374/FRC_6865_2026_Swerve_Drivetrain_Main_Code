@@ -1,21 +1,19 @@
-// The ShooterCommand will be used as a library for the ShooterSubsystem
+// The IntakeCommand will be used as a library for the IntakeSubsystem
 
 package frc.robot.commands;
 
 // All imports will be between Lines 6-7
-import frc.robot.subsystems.ShooterSubsystem;
 import edu.wpi.first.wpilibj2.command.Command;
+import frc.robot.subsystems.IntakeSubsystem;
 
+public class IntakeCommand extends Command {
+    private final IntakeSubsystem m_subsystem;
 
-public class ShooterCommand extends Command {
-  @SuppressWarnings({"PMD.UnusedPrivateField", "PMD.SingularField"})
-  private final ShooterSubsystem m_subsystem;
-
-  /**
+      /**
    * Creates a new ShooterCommand.
    * @param subsystem The subsystem used by this command.
    */
-  public ShooterCommand(ShooterSubsystem subsystem) {
+  public IntakeCommand(IntakeSubsystem subsystem) {
     m_subsystem = subsystem;
     // Use addRequirements() here to declare subsystem dependencies.
     addRequirements(subsystem);
@@ -36,7 +34,7 @@ public class ShooterCommand extends Command {
   // Called once the command ends or is interrupted.
   @Override
   public void end(boolean interrupted) {
-
+    
   }
 
   // Returns true when the command should end.

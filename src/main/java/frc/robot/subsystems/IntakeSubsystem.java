@@ -3,10 +3,9 @@
 
 package frc.robot.subsystems;
 
-// All imports with be between Lines 7-11
+// All imports with be between Lines 7-10
 import frc.robot.commands.IntakeAuto;
 import frc.robot.commands.IntakeCommand;
-import edu.wpi.first.wpilibj.drive.*;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
 

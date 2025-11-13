@@ -1,20 +1,22 @@
-// Copyright (c) FIRST and other WPILib contributors.
-// Open Source Software; you can modify and/or share it under the terms of
-// the WPILib BSD license file in the root directory of this project.
+// The ShooterAuto will be used as an Auto to Automatically Shoot something
 
 package frc.robot.commands;
 
+// All imports will be between Lines 6-8
 import frc.robot.subsystems.ShooterSubsystem;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
 
-public final class Autos {
-  /** Example static factory for an autonomous command. */
+
+public final class ShooterAuto {
+  public static ShooterCommand ShooterAuto;
+
+/** Shooter static factory for an autonomous Shooter command. */
   public static Command ShooterAuto(ShooterSubsystem subsystem) {
     return Commands.sequence(subsystem.ShooterMethodCommand(), new ShooterCommand(subsystem));
   }
 
-  private Autos() {
+  private ShooterAuto() {
     throw new UnsupportedOperationException("This is a utility class!");
   }
 }

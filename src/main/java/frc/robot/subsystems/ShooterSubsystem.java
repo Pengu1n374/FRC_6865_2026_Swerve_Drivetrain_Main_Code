@@ -1,27 +1,27 @@
-// Copyright (c) FIRST and other WPILib contributors.
-// Open Source Software; you can modify and/or share it under the terms of
-// the WPILib BSD license file in the root directory of this project.
 // This is the ShooterSubsystem which will opperate the Shooting Mechanism of the Robot
 
 package frc.robot.subsystems;
-// All the imports are between Line 8-10
+// All imports will be between Lines 6-9
+
 import edu.wpi.first.wpilibj2.command.Command;
+import frc.robot.commands.ShooterAuto;
+import frc.robot.commands.ShooterCommand;
 import edu.wpi.first.wpilibj2.command.SubsystemBase;
-import edu.wpi.first.cameraserver.*;
+
 
 public class ShooterSubsystem extends SubsystemBase {
   /** Creates a new ShooterSubsystem. */
   public ShooterSubsystem() {
-    // State what should happen in the ShooterSubsystem.
+    // State what should happen in the ShooterSubsystem in these brackets.
   }
 
   /**
-   * ShooterCommand factory method.
+   * Below is the ShooterCommand factory method.
    *
    * @return a command
    */
   public Command ShooterMethodCommand() {
-    // Inline construction of command goes here.
+    // Inline construction of command goes here, between the brackets.
     // Subsystem::RunOnce implicitly requires `this` subsystem.
     return runOnce(
         () -> {
