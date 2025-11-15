@@ -1,8 +1,8 @@
-// The CommandSwerveDrivetrain is the Base Command that will Power and Operrate the Motors for a Swerve Drivetrain
+// The CommandSwerveDrivetrain is the main subsystem for the Swerve Drivetrain of the Robot
 
 package frc.robot.subsystems;
 
-// All imports will be between Lines 6-58
+// All imports will be between Lines 6-65
 import static edu.wpi.first.units.Units.Second;
 import static edu.wpi.first.units.Units.Volts;
 import frc.robot.commands.IntakeAuto;
@@ -18,6 +18,15 @@ import com.ctre.phoenix6.Orchestra;
 import com.ctre.phoenix6.SignalLogger;
 import com.ctre.phoenix6.Utils;
 import com.ctre.phoenix6.hardware.Pigeon2;
+import com.ctre.phoenix6.hardware.TalonFX;
+import com.ctre.phoenix6.hardware.CANcoder;
+import com.ctre.phoenix6.hardware.core.*;
+import com.ctre.phoenix6.hardware.jni.*;
+import com.ctre.phoenix6.configs.*;
+import com.ctre.phoenix6.signals.*;
+import com.ctre.phoenix6.signals.InvertedValue;
+import com.ctre.phoenix6.signals.NeutralModeValue;
+import com.ctre.phoenix6.signals.SensorDirectionValue;
 import com.ctre.phoenix6.swerve.SwerveDrivetrainConstants;
 import com.ctre.phoenix6.swerve.SwerveModule.DriveRequestType;
 import com.ctre.phoenix6.swerve.SwerveModuleConstants;
@@ -59,5 +68,8 @@ import edu.wpi.first.wpilibj2.command.sysid.SysIdRoutine;
 
 
 public class CommandSwerveDrivetrain {
-    
+    // Define CommandSwerveDrivetrain properties and methods here
+    private class SwerveDrivetrain {
+        // Define SwerveDrivetrain properties and methods here
+    }
 }

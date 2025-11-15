@@ -2,9 +2,9 @@
 
 package frc.robot;
 
-// All imports will be between Lines 6-69
+// All imports will be between Lines 6-76
 import static edu.wpi.first.units.Units.*;
-
+// All Frc imports Lines 8-18
 import frc.robot.subsystems.*;
 import frc.robot.commands.ShooterAuto;
 import frc.robot.commands.ShooterCommand;
@@ -16,6 +16,7 @@ import frc.robot.subsystems.IntakeParameters;
 import frc.robot.subsystems.IntakeSubsystem;
 import frc.robot.subsystems.CommandSwerveDrivetrain;
 import frc.robot.generated.TunerConstants.OperatorConstants;
+// All WPILib imports Lines 6, 20-42
 import edu.wpi.first.cameraserver.CameraServer;
 import edu.wpi.first.apriltag.*;
 import edu.wpi.first.apriltag.jni.*;
@@ -27,13 +28,6 @@ import edu.wpi.first.math.geometry.Rotation2d;
 import edu.wpi.first.math.kinematics.*;
 import edu.wpi.first.math.util.*;
 import edu.wpi.first.math.jni.*;
-import com.ctre.phoenix6.configs.*;
-import com.ctre.phoenix6.configs.jni.*;
-import com.ctre.phoenix6.swerve.*;
-import com.ctre.phoenix6.Orchestra;
-import com.ctre.phoenix6.swerve.jni.*;
-import com.ctre.phoenix6.wpiutils.*;
-import com.ctre.phoenix6.hardware.jni.*;
 import edu.wpi.first.units.*;
 import edu.wpi.first.units.Units.*;
 import edu.wpi.first.wpilibj2.command.Command;
@@ -46,11 +40,23 @@ import edu.wpi.first.wpilibj.simulation.*;
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.drive.*;
 import edu.wpi.first.wpilibj.motorcontrol.*;
+// All CTRE Phoenix imports Lines 44-58
+import com.ctre.phoenix6.configs.*;
+import com.ctre.phoenix6.configs.jni.*;
+import com.ctre.phoenix6.swerve.*;
+import com.ctre.phoenix6.Orchestra;
+import com.ctre.phoenix6.swerve.jni.*;
+import com.ctre.phoenix6.wpiutils.*;
+import com.ctre.phoenix6.hardware.jni.*;
+import com.ctre.phoenix6.hardware.core.*;
+import com.ctre.phoenix6.hardware.TalonFX;
+import com.ctre.phoenix6.hardware.CANcoder;
 import com.ctre.phoenix.*;
 import com.ctre.phoenix.time.StopWatch;
 import com.ctre.phoenix.motorcontrol.*;
 import com.ctre.phoenix.motion.*;
 import com.ctre.phoenix.time.*;
+// All PathPlanner imports Lines 60-71
 import com.pathplanner.lib.*;
 import com.pathplanner.lib.commands.*;
 import com.pathplanner.lib.auto.*;
@@ -63,6 +69,7 @@ import com.pathplanner.lib.util.*;
 import com.pathplanner.lib.util.swerve.*;
 import com.pathplanner.lib.pathfinding.*;
 import com.pathplanner.lib.path.*;
+// All RevRobotics imports Lines 73-76
 import com.revrobotics.jni.*;
 import com.revrobotics.config.*;
 import com.revrobotics.spark.*;

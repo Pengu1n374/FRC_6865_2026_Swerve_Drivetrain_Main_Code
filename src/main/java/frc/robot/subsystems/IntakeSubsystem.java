@@ -29,13 +29,12 @@ public class IntakeSubsystem extends SubsystemBase {
         });
   }
   public final IntakeParameters parameters = new IntakeParameters();
-  /**
-   * Below is a Intake method querying a boolean state of the subsystem (for example, a digital sensor to recognize what is in front of the Shooter).
-   *
-   * The @return value of some boolean subsystem state, such as a digital sensor, is below.
-   */
+  // Creates a new IntakeParameters object called parameters
+
+  // Below is a Intake method querying a boolean state of the subsystem (for example, a digital sensor to recognize what is in front of the Shooter).
+  // The @return value of some boolean subsystem state, such as a digital sensor, is below.
   public boolean IntakeCondition() {
-    // Query some boolean state, such as a digital sensor.
+    // Query some boolean state about the IntakeCondition, such as a digital sensor.
     return false;
   }
 
