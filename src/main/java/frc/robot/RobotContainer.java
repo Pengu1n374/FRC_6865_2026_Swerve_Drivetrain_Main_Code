@@ -40,7 +40,7 @@ import edu.wpi.first.wpilibj.simulation.*;
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.drive.*;
 import edu.wpi.first.wpilibj.motorcontrol.*;
-// All CTRE Phoenix imports Lines 44-58
+// All CTRE Phoenix imports Lines 44-65
 import com.ctre.phoenix6.configs.*;
 import com.ctre.phoenix6.configs.jni.*;
 import com.ctre.phoenix6.swerve.*;
@@ -63,7 +63,7 @@ import com.ctre.phoenix.time.StopWatch;
 import com.ctre.phoenix.motorcontrol.*;
 import com.ctre.phoenix.motion.*;
 import com.ctre.phoenix.time.*;
-// All PathPlanner imports Lines 60-71
+// All PathPlanner imports Lines 67-78
 import com.pathplanner.lib.*;
 import com.pathplanner.lib.commands.*;
 import com.pathplanner.lib.auto.*;
@@ -76,29 +76,29 @@ import com.pathplanner.lib.util.*;
 import com.pathplanner.lib.util.swerve.*;
 import com.pathplanner.lib.pathfinding.*;
 import com.pathplanner.lib.path.*;
-// All RevRobotics imports Lines 73-76
+// All RevRobotics imports Lines 80-83
 import com.revrobotics.jni.*;
 import com.revrobotics.config.*;
 import com.revrobotics.spark.*;
 import com.revrobotics.spark.config.*;
 
-/**
- * This class is where the bulk of the robot should be declared. Since Command-based is a
- * "declarative" paradigm, very little robot logic should actually be handled in the {@link Robot}
- * periodic methods (other than the scheduler calls). Instead, the structure of the robot (including
- * subsystems, commands, and trigger mappings) should be declared here.
- */
+
+ // This class is where the bulk of the robot should be declared. Since Command-based is a
+ // "Declarative" paradigm, very little robot logic should actually be handled in the {@link Robot}
+ // Periodic methods (other than the Scheduler Calls). Instead, the structure of the robot
+ // (including Subsystems, Commands, and Trigger Mappings) should be declared here.
+
 public class RobotContainer {
   // The robot's subsystems and commands are defined here...
   private final IntakeSubsystem m_IntakeSubsystem = new IntakeSubsystem();
   private final ShooterSubsystem m_ShooterSubsystem = new ShooterSubsystem();
-  // Replace with CommandPS4Controller or CommandJoystick if needed
+  // Replace with CommandPS4Controller or CommandJoystick if need be
   private final CommandXboxController m_driverController =
       new CommandXboxController(OperatorConstants.kDriverControllerPort);
 
   // The container for the robot. Contains subsystems, OI devices, and commands.
   public RobotContainer() {
-    // Configure the trigger bindings
+    // Configure the trigger bindings inside this method.
     configureBindings();
     new Trigger(m_ShooterSubsystem::ShooterCondition)
         .onTrue(new ShooterCommand(m_ShooterSubsystem));
