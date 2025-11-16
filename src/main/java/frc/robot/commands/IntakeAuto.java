@@ -7,6 +7,7 @@ import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
 import frc.robot.subsystems.IntakeSubsystem;
 import frc.robot.subsystems.IntakeParameters;
+import frc.robot.commands.IntakeCommand;
 
 public final class IntakeAuto {
       public static IntakeCommand IntakeAuto;

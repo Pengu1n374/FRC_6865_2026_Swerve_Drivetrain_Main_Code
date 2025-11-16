@@ -2,9 +2,10 @@
 
 package frc.robot;
 
-// All imports will be between Lines 6-31
+// All imports will be between Lines 6, 7, 9-18, 20-35
 import com.ctre.phoenix6.SignalLogger;
 import com.ctre.phoenix6.swerve.SwerveDrivetrain.SwerveDriveState;
+// All Frc imports Lines 9-18
 import frc.robot.RobotContainer;
 import frc.robot.subsystems.CommandSwerveDrivetrain;
 import frc.robot.subsystems.IntakeSubsystem;
@@ -15,6 +16,7 @@ import frc.robot.commands.IntakeAuto;
 import frc.robot.commands.IntakeCommand;
 import frc.robot.commands.ShooterAuto;
 import frc.robot.commands.ShooterCommand;
+// All WPILib imports Lines 20-35
 import edu.wpi.first.math.geometry.Pose2d;
 import edu.wpi.first.math.kinematics.ChassisSpeeds;
 import edu.wpi.first.math.kinematics.SwerveModulePosition;

@@ -1,8 +1,8 @@
-// RobotContainer.java is where everything is defined and configured
+// RobotContainer.java is where everything is defined and configured for the robot
 
 package frc.robot;
 
-// All imports will be between Lines 6-76
+// All imports will be between Lines 6, 8-18, 20-42, 44-65, 67-78, 79-84
 import static edu.wpi.first.units.Units.*;
 // All Frc imports Lines 8-18
 import frc.robot.subsystems.*;
@@ -76,11 +76,12 @@ import com.pathplanner.lib.util.*;
 import com.pathplanner.lib.util.swerve.*;
 import com.pathplanner.lib.pathfinding.*;
 import com.pathplanner.lib.path.*;
-// All RevRobotics imports Lines 80-83
+// All RevRobotics imports Lines 80-84
 import com.revrobotics.jni.*;
 import com.revrobotics.config.*;
 import com.revrobotics.spark.*;
 import com.revrobotics.spark.config.*;
+import com.revrobotics.*;
 
 
  // This class is where the bulk of the robot should be declared. Since Command-based is a

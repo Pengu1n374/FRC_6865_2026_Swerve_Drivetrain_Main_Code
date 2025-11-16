@@ -5,6 +5,7 @@ package frc.robot.commands;
 // All imports will be between Lines 6-9
 import frc.robot.subsystems.ShooterSubsystem;
 import frc.robot.subsystems.ShooterParameters;
+import frc.robot.commands.ShooterCommand;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.Commands;
 

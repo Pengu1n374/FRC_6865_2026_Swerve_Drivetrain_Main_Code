@@ -3,17 +3,17 @@
 package frc.robot.subsystems;
 
 // All imports will be between Lines 6-10
+import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.commands.ShooterAuto;
 import frc.robot.commands.ShooterCommand;
 import frc.robot.subsystems.ShooterParameters;
-import edu.wpi.first.wpilibj2.command.SubsystemBase;
 
 
 public class ShooterSubsystem extends SubsystemBase {
-  /** Creates a new ShooterSubsystem. */
+  /** Creates a new ShooterSubsystem class. */
   public ShooterSubsystem() {
-    // State what should happen in the ShooterSubsystem in these brackets.
+    // State what should happen in the ShooterSubsystem in these brackets here.
   }
    // Below is the ShooterCommand factory method.
    // Use @return to return a command
