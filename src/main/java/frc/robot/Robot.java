@@ -7,69 +7,106 @@ package frc.robot;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
+// Main Robot class
+public class Robot extends TimedRobot { // Main Robot class extending TimedRobot
+  private Command m_autonomousCommand; // Autonomous command variable
 
-public class Robot extends TimedRobot {
-  private Command m_autonomousCommand;
+  private final RobotContainer m_robotContainer; // RobotContainer instance
 
-  private final RobotContainer m_robotContainer;
-
-  public Robot() {
-    m_robotContainer = new RobotContainer();
+  public Robot() // Robot constructor
+  {
+    m_robotContainer = new RobotContainer(); // Initialize RobotContainer
   }
 
   @Override
-  public void robotPeriodic() {
-    CommandScheduler.getInstance().run(); 
+  public void robotPeriodic() // Robot periodic method
+  {
+    CommandScheduler.getInstance().run(); // Run the CommandScheduler
   }
 
   @Override
-  public void disabledInit() {}
+  public void disabledInit() // Disabled initialization method
+  {
+    // Disabled-specific initialization code can go here
+  }
 
   @Override
-  public void disabledPeriodic() {}
+  public void disabledPeriodic() // Disabled periodic method
+  {
+    // Disabled-specific periodic code can go here
+  }
 
   @Override
-  public void disabledExit() {}
+  public void disabledExit() // Disabled exit method
+  {
+    // Disabled-specific exit code can go here
+  }
 
   @Override
-  public void autonomousInit() {
-    m_autonomousCommand = m_robotContainer.getAutonomousCommand();
+  public void autonomousInit() // Autonomous initialization method
+  {
+    m_autonomousCommand = m_robotContainer.getAutonomousCommand(); // Get the autonomous command
 
-    if (m_autonomousCommand != null) {
-      m_autonomousCommand.schedule();
+    if (m_autonomousCommand != null) // If autonomous command is not null
+    {
+      m_autonomousCommand.schedule(); // Schedule the autonomous command
     }
   }
 
   @Override
-  public void autonomousPeriodic() {}
+  public void autonomousPeriodic() // Autonomous periodic method
+  {
+    // Autonomous-specific periodic code can go here
+  }
 
   @Override
-  public void autonomousExit() {}
+  public void autonomousExit() // Autonomous exit method
+  {
+    // Autonomous-specific exit code can go here
+  }
 
   @Override
-  public void teleopInit() {
-    if (m_autonomousCommand != null) {
-      m_autonomousCommand.cancel();
+  public void teleopInit() // Teleop initialization method
+  {
+    if (m_autonomousCommand != null) // If autonomous command is not null
+    {
+      m_autonomousCommand.cancel(); // Cancel the autonomous command
     }
   }
 
   @Override
-  public void teleopPeriodic() {}
-
-  @Override
-  public void teleopExit() {}
-
-  @Override
-  public void testInit() {
-    CommandScheduler.getInstance().cancelAll();
+  public void teleopPeriodic() // Teleop periodic method
+  {
+    // Teleop-specific periodic code can go here
   }
 
   @Override
-  public void testPeriodic() {}
+  public void teleopExit() // Teleop exit method
+  {
+    // Teleop-specific exit code can go here
+  }
 
   @Override
-  public void testExit() {}
+  public void testInit() // Test initialization method
+  {
+    CommandScheduler.getInstance().cancelAll(); // Cancel all commands
+  }
 
   @Override
-  public void simulationPeriodic() {}
+  public void testPeriodic() // Test periodic method
+  {
+    // Test-specific periodic code can go here
+  }
+
+  @Override
+  public void testExit() // Test exit method
+  {
+    // Test-specific exit code can go here
+  }
+
+  @Override
+  public void simulationPeriodic() // Simulation periodic method
+  {
+    // Simulation-specific periodic code can go here
+  }
 }
