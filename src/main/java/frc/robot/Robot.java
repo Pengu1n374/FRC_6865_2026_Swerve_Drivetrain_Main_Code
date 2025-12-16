@@ -1,112 +1,112 @@
-// Robot.java is one of the most important Files to run, since RobotContainer Class is Defined in here
+// Copyright (c) FIRST and other WPILib contributors.
+// Open Source Software; you can modify and/or share it under the terms of
+// the WPILib BSD license file in the root directory of this project.
 
 package frc.robot;
 
-// All imports will be between Lines 6-8
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj2.command.Command;
 import edu.wpi.first.wpilibj2.command.CommandScheduler;
+// Main Robot class
+public class Robot extends TimedRobot { // Main Robot class extending TimedRobot
+  private Command m_autonomousCommand; // Autonomous command variable
 
- // The methods in this class are called automatically corresponding to each mode, as described in
- // The TimedRobot documentation. If you change the name of this class or the package after creating
- // This project, you must also update the Main.java file in the project.
-public class Robot extends TimedRobot {
-  private Command m_autonomousCommand;
+  private final RobotContainer m_robotContainer; // RobotContainer instance
 
-  private final RobotContainer m_robotContainer;
-
-  /**
-   * This function is run when the robot is first started up and should be used for any
-   * initialization code.
-   */
-  public Robot() {
-    // Instantiate our RobotContainer.  This will perform all our button bindings, and put our
-    // autonomous chooser on the dashboard.
-    m_robotContainer = new RobotContainer();
-  }
-
-  /**
-   * This function is called every 20 ms, no matter the mode. Use this for items like diagnostics
-   * that you want ran during disabled, autonomous, teleoperated and test.
-   *
-   * <p>This runs after the mode specific periodic functions, but before LiveWindow and
-   * SmartDashboard integrated updating.
-   */
-  @Override
-  public void robotPeriodic() {
-    // Runs the Scheduler.  This is responsible for polling buttons, adding newly-scheduled
-    // commands, running already-scheduled commands, removing finished or interrupted commands,
-    // and running subsystem periodic() methods.  This must be called from the robot's periodic
-    // block in order for anything in the Command-based framework to work.
-    CommandScheduler.getInstance().run();
-  }
-
-  /** This function is called once each time the robot enters Disabled mode. */
-  @Override
-  public void disabledInit() {
-
+  public Robot() // Robot constructor
+  {
+    m_robotContainer = new RobotContainer(); // Initialize RobotContainer
   }
 
   @Override
-  public void disabledPeriodic() {
-
+  public void robotPeriodic() // Robot periodic method
+  {
+    CommandScheduler.getInstance().run(); // Run the CommandScheduler
   }
 
-  /** This autonomous runs the autonomous command selected by your {@link RobotContainer} class. */
   @Override
-  public void autonomousInit() {
-    m_autonomousCommand = m_robotContainer.getAutonomousCommand();
+  public void disabledInit() // Disabled initialization method
+  {
+    // Disabled-specific initialization code can go here
+  }
 
-    // schedule the autonomous command
-    if (m_autonomousCommand != null) {
-      m_autonomousCommand.schedule();
+  @Override
+  public void disabledPeriodic() // Disabled periodic method
+  {
+    // Disabled-specific periodic code can go here
+  }
+
+  @Override
+  public void disabledExit() // Disabled exit method
+  {
+    // Disabled-specific exit code can go here
+  }
+
+  @Override
+  public void autonomousInit() // Autonomous initialization method
+  {
+    m_autonomousCommand = m_robotContainer.getAutonomousCommand(); // Get the autonomous command
+
+    if (m_autonomousCommand != null) // If autonomous command is not null
+    {
+      m_autonomousCommand.schedule(); // Schedule the autonomous command
     }
   }
 
-  /** This function is called periodically during autonomous. */
   @Override
-  public void autonomousPeriodic() {
-
+  public void autonomousPeriodic() // Autonomous periodic method
+  {
+    // Autonomous-specific periodic code can go here
   }
 
   @Override
-  public void teleopInit() {
-    // This makes sure that the autonomous stops running when
-    // teleop starts running. If you want the autonomous to
-    // continue until interrupted by another command, remove
-    // this line or comment it out.
-    if (m_autonomousCommand != null) {
-      m_autonomousCommand.cancel();
+  public void autonomousExit() // Autonomous exit method
+  {
+    // Autonomous-specific exit code can go here
+  }
+
+  @Override
+  public void teleopInit() // Teleop initialization method
+  {
+    if (m_autonomousCommand != null) // If autonomous command is not null
+    {
+      m_autonomousCommand.cancel(); // Cancel the autonomous command
     }
   }
 
-  /** This function is called periodically during operator control. */
   @Override
-  public void teleopPeriodic() {
-
+  public void teleopPeriodic() // Teleop periodic method
+  {
+    // Teleop-specific periodic code can go here
   }
 
   @Override
-  public void testInit() {
-    // Cancels all running commands at the start of test mode.
-    CommandScheduler.getInstance().cancelAll();
+  public void teleopExit() // Teleop exit method
+  {
+    // Teleop-specific exit code can go here
   }
 
-  /** This function is called periodically during test mode. */
   @Override
-  public void testPeriodic() {
-
+  public void testInit() // Test initialization method
+  {
+    CommandScheduler.getInstance().cancelAll(); // Cancel all commands
   }
 
-  /** This function is called once when the robot is first started up. */
   @Override
-  public void simulationInit() {
-
+  public void testPeriodic() // Test periodic method
+  {
+    // Test-specific periodic code can go here
   }
 
-  /** This function is called periodically whilst in simulation. */
   @Override
-  public void simulationPeriodic() {
+  public void testExit() // Test exit method
+  {
+    // Test-specific exit code can go here
+  }
 
+  @Override
+  public void simulationPeriodic() // Simulation periodic method
+  {
+    // Simulation-specific periodic code can go here
   }
 }

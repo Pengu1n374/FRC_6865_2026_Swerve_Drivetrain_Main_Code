@@ -1,25 +1,22 @@
 // This is the ShooterSubsystem which will opperate the Shooting Mechanism of the Robot
 
 package frc.robot.subsystems;
-// All imports will be between Lines 6-9
 
+// All imports will be between Lines 6-10
+import edu.wpi.first.wpilibj2.command.SubsystemBase;
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.commands.ShooterAuto;
 import frc.robot.commands.ShooterCommand;
-import edu.wpi.first.wpilibj2.command.SubsystemBase;
+import frc.robot.subsystems.ShooterParameters;
 
 
 public class ShooterSubsystem extends SubsystemBase {
-  /** Creates a new ShooterSubsystem. */
+  /** Creates a new ShooterSubsystem class. */
   public ShooterSubsystem() {
-    // State what should happen in the ShooterSubsystem in these brackets.
+    // State what should happen in the ShooterSubsystem in these brackets here.
   }
-
-  /**
-   * Below is the ShooterCommand factory method.
-   *
-   * @return a command
-   */
+   // Below is the ShooterCommand factory method.
+   // Use @return to return a command
   public Command ShooterMethodCommand() {
     // Inline construction of command goes here, between the brackets.
     // Subsystem::RunOnce implicitly requires `this` subsystem.
@@ -28,7 +25,7 @@ public class ShooterSubsystem extends SubsystemBase {
           /* The One-time action goes here */
         });
   }
-
+  public final ShooterParameters parameters = new ShooterParameters();
   /**
    * Below is a Shooter method querying a boolean state of the subsystem (for example, a digital sensor to recognize what is in front of the Shooter).
    *

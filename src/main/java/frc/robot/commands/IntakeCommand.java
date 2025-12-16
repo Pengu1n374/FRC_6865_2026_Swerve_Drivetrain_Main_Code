@@ -2,9 +2,11 @@
 
 package frc.robot.commands;
 
-// All imports will be between Lines 6-7
+// All imports will be between Lines 6-9
 import edu.wpi.first.wpilibj2.command.Command;
 import frc.robot.subsystems.IntakeSubsystem;
+import frc.robot.subsystems.IntakeParameters;
+import frc.robot.commands.IntakeAuto;
 
 public class IntakeCommand extends Command {
     private final IntakeSubsystem m_subsystem;
